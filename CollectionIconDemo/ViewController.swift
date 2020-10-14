@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     let titles : [String] = ["苹果苹果苹果苹果苹果苹果","梨梨梨梨梨梨梨梨","西瓜西瓜西瓜西瓜西瓜西瓜西瓜","kjkadjfajd","aaaaaaaagegeeadfa","YLWaterFlowLayoutDelegate"]
     
     lazy var collectionView : UICollectionView = {
-        let layout = YLWaterFlowLayout.init()
+        let layout = XTWaterFlowLayout.init()
         layout.rowHeight = 20
         layout.delegate = self
         
@@ -56,8 +56,8 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource {
     
 }
 
-extension ViewController: YLWaterFlowLayoutDelegate {
-    func waterFlowLayout(layout: YLWaterFlowLayout, withAt indexPath: IndexPath) -> CGFloat {
+extension ViewController: XTWaterFlowLayoutDelegate {
+    func waterFlowLayout(layout: XTWaterFlowLayout, withAt indexPath: IndexPath) -> CGFloat {
         let str = titles[indexPath.row] as NSString
         let w = str.boundingRect(with: CGSize(width: UIScreen.main.bounds.size.width, height: CGFloat.infinity), options: [.usesFontLeading, .usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)], context: nil).width
         return w + 20

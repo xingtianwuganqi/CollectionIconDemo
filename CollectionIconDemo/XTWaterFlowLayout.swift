@@ -8,15 +8,15 @@
 
 import UIKit
 
-protocol YLWaterFlowLayoutDelegate: NSObjectProtocol {
+protocol XTWaterFlowLayoutDelegate: NSObjectProtocol {
     /**通过代理获得每个cell的宽度*/
-    func waterFlowLayout(layout: YLWaterFlowLayout, withAt indexPath: IndexPath) -> CGFloat
+    func waterFlowLayout(layout: XTWaterFlowLayout, withAt indexPath: IndexPath) -> CGFloat
     /**获取加载的content的高度*/
     func waterContentSizeHeight(height: CGFloat)
 }
 
-class YLWaterFlowLayout: UICollectionViewFlowLayout {
-    weak var delegate: YLWaterFlowLayoutDelegate?
+class XTWaterFlowLayout: UICollectionViewFlowLayout {
+    weak var delegate: XTWaterFlowLayoutDelegate?
     var rowHeight: CGFloat = 0 ///< 固定行高
     
     var originxArray: [CGFloat] = []
