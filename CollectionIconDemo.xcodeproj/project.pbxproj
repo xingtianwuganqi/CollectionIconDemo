@@ -14,6 +14,7 @@
 		C47204992536C63800840B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47204972536C63800840B0B /* LaunchScreen.storyboard */; };
 		C47204A12536C87500840B0B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47204A02536C87500840B0B /* CollectionViewCell.swift */; };
 		C47204A32536C98100840B0B /* XTWaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47204A22536C98100840B0B /* XTWaterFlowLayout.swift */; };
+		C47204A72536FF4C00840B0B /* CollectionIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47204A62536FF4C00840B0B /* CollectionIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C472049A2536C63800840B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C47204A02536C87500840B0B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C47204A22536C98100840B0B /* XTWaterFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTWaterFlowLayout.swift; sourceTree = "<group>"; };
+		C47204A62536FF4C00840B0B /* CollectionIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				C472048C2536C63500840B0B /* AppDelegate.swift */,
 				C47204902536C63500840B0B /* ViewController.swift */,
+				C47204A62536FF4C00840B0B /* CollectionIconView.swift */,
 				C47204A22536C98100840B0B /* XTWaterFlowLayout.swift */,
 				C47204A02536C87500840B0B /* CollectionViewCell.swift */,
 				C47204922536C63500840B0B /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47204A32536C98100840B0B /* XTWaterFlowLayout.swift in Sources */,
+				C47204A72536FF4C00840B0B /* CollectionIconView.swift in Sources */,
 				C47204912536C63500840B0B /* ViewController.swift in Sources */,
 				C472048D2536C63500840B0B /* AppDelegate.swift in Sources */,
 				C47204A12536C87500840B0B /* CollectionViewCell.swift in Sources */,
