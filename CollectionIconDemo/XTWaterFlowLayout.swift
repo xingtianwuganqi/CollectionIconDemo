@@ -24,10 +24,10 @@ class XTWaterFlowLayout: UICollectionViewFlowLayout {
     var originxArray: [CGFloat] = []
     var originyArray: [CGFloat] = []
     
-    override init() {
+    init(spacing: CGFloat,margin: CGFloat) {
         super.init()
-        self.minimumLineSpacing = 5 //行间距
-        self.minimumInteritemSpacing = 5 //同一行不同cell间距
+        self.minimumLineSpacing = spacing //行间距
+        self.minimumInteritemSpacing = spacing //同一行不同cell间距
         self.sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
         self.scrollDirection = .vertical
     }
@@ -35,6 +35,14 @@ class XTWaterFlowLayout: UICollectionViewFlowLayout {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // 解决高度变小时高度不变的问题
+    override func invalidateLayout() {
+        super.invalidateLayout()
+        self.originxArray = []
+        self.originyArray = []
+    }
+    
     //#pragma mark - 重写父类的方法，实现瀑布流布局
     //#pragma mark - 当尺寸有所变化时，重新刷新
     

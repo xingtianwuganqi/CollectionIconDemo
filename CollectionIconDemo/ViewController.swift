@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     let titles : [String] = ["苹果苹果苹果苹果苹果苹果","梨梨梨梨梨梨梨梨","西瓜西瓜西瓜西瓜西瓜西瓜西瓜","kjkadjfajd","aaaaaaaagegeeadfa","YLWaterFlowLayoutDelegate"]
     
     lazy var collectionView : UICollectionView = {
-        let layout = XTWaterFlowLayout.init()
+        let layout = XTWaterFlowLayout.init(spacing: 10, margin: 20)
         layout.rowHeight = 20
         layout.delegate = self
         

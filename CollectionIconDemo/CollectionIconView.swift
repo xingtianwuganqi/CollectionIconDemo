@@ -19,7 +19,7 @@ class CollectionIconView: UIView {
     }
     
     lazy var collectionView : UICollectionView = {
-        let layout = XTWaterFlowLayout.init()
+        let layout = XTWaterFlowLayout.init(spacing: 10, margin: 20)
         layout.rowHeight = 20
         layout.delegate = self
         
